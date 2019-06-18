@@ -1,0 +1,46 @@
+<head>
+  <title>bkmrkt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="img/bkmrkt-192.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="bkmrkt">
+  <link rel="apple-touch-icon-precomposed" href="img/bkmrkt-152.png">
+
+  <meta name="msapplication-TileImage" content="img/bkmrkt-144.png">
+  <meta name="msapplication-TileColor" content="#333333">
+
+</head>
+
+<body>	
+
+<div class="container-fluid">
+<div class="row">
+<div class="loginheader">
+	<h1 class="pull-right">bkmrkt 0.4.1</h1>
+	{{> loginButtons}}
+</div>
+</div>
+<div class="row">
+<div class="addbox">
+{{> baetaVidLeikmanni}}
+</div>
+</div>
+
+	{{#if currentUser}}
+  		{{> listinn}}
+
+  		{{else}}
+  		<div class="container">
+  		<h1>Howdy, Welcome to bkmrkt!</h1>
+  		<p><strong>What is it?</strong> Your basic online personal bookmark-manager, intended to be used as a starting "home" page for your browser or new tab</p> 
+  		<p>Sign up/Log in to start using the app... <em>(and no, we won't be harvesting your email address, you don't even need it to create an account :) )</em></p>
+  		</div>
+	 {{/if}}
+	 
+</div>
+</body>

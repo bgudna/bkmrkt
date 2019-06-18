@@ -1,0 +1,8 @@
+<template name="workList">
+<ul>
+<h2>Work</h2>
+{{#each workList}}
+	<li class="leikmadur {{valinnClassi}}"><em>{{score}}</em> - <strong><a href="{{url}}" target="_blank">{{name}}</a></strong> | {{url}} | {{group}}</li>
+{{/each}}
+</ul>
+</template>

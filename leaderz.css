@@ -1,0 +1,216 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	background: #faf8dd;
+	color: #444;
+	margin-bottom: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+.loginheader {
+	height: 40px;
+	line-height: 40px;
+	background: #96DB1B;
+	padding: 0 15px;
+}
+.loginheader h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+
+.loginheader a.login-link-text {
+	color: #fff;
+}
+
+.addbox {
+	padding: 20px;
+	background: #7AA9DB;
+	color: #fff;
+}
+.addbox input {
+	border: none;
+	background: #a2c3e6;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 3px;
+	width: 25%;
+}
+	::-webkit-input-placeholder { color: #e6eef8; }
+	:-moz-placeholder { color: #e6eef8; }
+	::-moz-placeholder { color: #e6eef8; }
+	:-ms-input-placeholder { color: #e6eef8; }
+
+.addbox input:invalid {
+    box-shadow: none;
+}	
+
+.addbox select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+	border: none;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 3px;
+	background: #a2c3e6;
+	color: #fff;
+}
+.addbox .btn {
+	background: #3a70bc;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	width: 150px;
+}
+.addbox .btn:hover {
+	background: #555;
+	transition: background 0.6s ease;
+}
+
+.block {
+	padding: 10px;
+}
+
+.headstyle {
+	color: #3a70bc;
+	padding: 10px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+}
+.headstyle h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 18px;
+	font-weight: 500;
+	color: #96DB1B;
+}
+.scorebox {
+	font-size: 13px;
+	font-weight: bold;
+	top:10px;
+	padding: 13px 0 0 10px;
+}
+.valinn {
+	background: #DB5568;
+	color: #fff;
+	border-radius: 3px;
+}
+
+li.leikmadur {
+	padding: 10px 10px 10px 10px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+
+}
+li.leikmadur:hover {
+	background: #ddd;
+	transition: background 0.6s ease;
+}
+li.leikmadur.valinn:hover {
+	background: #cb3849;
+	transition: background 0.6s ease;
+}
+
+li.leikmadur.valinn a {
+    color: #fff;
+}
+
+li.leikmadur a {
+	color: #DB5568;
+	font-size: 18px;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.toolbox {
+	background: #DBD31B;
+	padding: 20px;
+}
+
+.toolbox input {
+	background: #bcaf03;
+	font-weight: bold;
+	color: #fff;
+	border:none;
+	padding: 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.toolbox input:hover {
+	background: #555;
+	transition: background 0.6s ease;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.takkar button {
+	margin: 20px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.valnafn {
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.fela {
+	display: none;
+}
+
+/*320 width fixes */
+
+@media only screen and (max-width:550px) {
+
+	.addbox input {
+		display: block;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.addbox select {
+		display: block;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.valnafn {
+		display: none;
+	}
+
+}

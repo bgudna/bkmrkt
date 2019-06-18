@@ -1,0 +1,15 @@
+<template name="baetaVidLeikmanni">
+{{#if currentUser}}
+	<form>
+		<input type="text" name="nafnLeikmanns" placeholder="Title or name" required>
+		<input type="text" name="urlTengils" placeholder="URL (Full)" required>
+		<select name="flokkur">
+			<option class="dropz" value="work">Work</option>
+			<option class="dropz" value="personal">Personal</option>
+			<option class="dropz" value="inspire">Inspiration</option>
+		</select>
+		<input type="submit" class="btn" value="Add to list">
+	</form>
+
+{{/if}}
+</template>

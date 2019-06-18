@@ -1,0 +1,56 @@
+<template name="listinn">
+
+<div class="row block">
+<div class="col-md-4">
+<div class="headstyle">
+<h2>Work</h2>
+</div>
+<div class="mainframe">
+<ul>
+{{#each workList}}
+	<li class="leikmadur {{valinnClassi}}"><strong><a href="{{url}}" target="_blank">{{name}}</a></strong><span class="scorebox pull-right">{{score}} &#9733;</span><br />&rArr; {{url}}</li>
+{{/each}}
+</ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="headstyle">
+<h2>Personal</h2>
+</div>
+<div class="mainframe">
+<ul>
+{{#each personalList}}
+	<li class="leikmadur {{valinnClassi}}"><strong><a href="{{url}}" target="_blank">{{name}}</a></strong><span class="scorebox pull-right">{{score}} &#9733;</span><br />&rArr; {{url}}</li>
+{{/each}}
+</ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="headstyle">
+<h2>Inspiration</h2>
+</div>
+<div class="mainframe">
+<ul>
+{{#each inspireList}}
+	<li class="leikmadur {{valinnClassi}}"><strong><a href="{{url}}" target="_blank">{{name}}</a></strong><span class="scorebox pull-right">{{score}} &#9733;</span><br />&rArr; {{url}}</li>
+{{/each}}
+</ul>
+</div>
+</div>
+
+</div>
+<div class="row">
+<div class="footer">
+{{#if synaValinnGaur}}
+	<div class="toolbox">
+		<input type="button" class="increment" value="&#9733; +">
+		<input type="button" class="decrement" value="&#9733; -">
+		<input type="button" class="remove" value="Remove">
+		<div class="pull-right"><span class="valnafn">Selected: <strong>{{synaValinnGaur.name}}</strong></span><input type="button" class="deselect" value="Close"></div>
+	</div>
+{{/if}}
+</div>
+</div>
+</template>

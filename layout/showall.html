@@ -1,0 +1,7 @@
+<template name="showAll">
+<ul>
+{{#each player}}
+	<li class="leikmadur {{valinnClassi}}"><em>{{score}}</em> - <strong><a href="{{url}}" target="_blank">{{name}}</a></strong> | {{url}} | {{group}}</li>
+{{/each}}
+</ul>
+</template>
